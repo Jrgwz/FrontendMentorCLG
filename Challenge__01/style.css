@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --header-height: 3.5rem;
+
+  --body-color: hsl(257, 40%, 49%);
+  --figure-color: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
+
+body,
+button,
+input,
+textarea {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  /* outline: none; */
+  text-decoration: none;
+}
+
+html,
+body {
+  
+width: 100%;
+  min-height: 100vh;
+  height: auto;
+  min-width: 275px;
+  overflow: visible;
+}
+
+body {
+  background-color: #674baf;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  flex-direction: column;
+  
+}
+
+
+
+.hero__logo{
+  width: 130px;
+  height: auto;
+  margin-bottom: 60px;
+  position: relative;
+  
+}
+
+.hero__illustration {
+  margin-bottom: 3rem;
+  width: max-content;
+  position: relative;
+  
+  
+}
+
+
+.hero__illustration {
+  height: auto;
+  max-width: 300px;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero__bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+ 
+}
+
+.hero__title{
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: poppins;
+}
+
+
+.hero__description{
+  text-align: center;
+  letter-spacing: px;
+  line-height: 23px;
+
+}
+
+.btn{
+  display: inline-block;
+  padding: .8rem  5rem;
+  background-color: #fff;
+  color: #674baf;
+  border-radius: 3rem;
+  font-size: 14px;
+  margin-bottom: 2rem;
+  transform: translatex(20%);
+  text-align: center;
+}
+
+.hero__description{
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.logo__container{
+  display: inline-block;
+  bottom: 5rem;
+  position:absolute;
+  transform: translateX(90px);
+  
+
+}
+
+.logo__social{
+  color: #fff;
+  margin-left: 3px;
+  padding: 0  0.5rem 0.5rem;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and  (min-width: 900px){
+
+  .wrapper{
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+    -webkit-box-pack: initial;
+    justify-content: initial;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 60px;
+    position: relative;
+    
+  }
+
+}
+  
+
+
