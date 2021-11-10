@@ -145,14 +145,22 @@ body {
 
 }
 
-.logo__social{
+/* .logo__social{
   color: #fff;
   margin-left: 3px;
   padding: 0  0.5rem 0.5rem;
   font-size: 20px;
+} */
+
+.logo__social {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #fff;
+  padding: 0.5em 0.6em;
+   color: #fff;
+   margin-left: .5rem;
+   font-size: 14px;
 }
-
-
 
 
 
