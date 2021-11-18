@@ -125,7 +125,7 @@ flex-direction: column;
 
 .btn__payment:hover{
   background: var(--opacity-blue);
-  transition: .3s ease-in-out;
+  transition: .3s ease-in;
   cursor: pointer;
 }
 
