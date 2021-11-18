@@ -54,6 +54,7 @@ text-align: center;
   line-height: var(--size-largest);
   color: var(--change-color);
   font-size: var(--fs-description);
+  margin-bottom: var(--size-normal);
 }
 .card__plan{
   display: flex;
