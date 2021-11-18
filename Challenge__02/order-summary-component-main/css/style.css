@@ -1,13 +1,22 @@
 @import "../node_modules/normalize-css/normalize.css";
 @import "root-style.css";
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 .container{
   width: 100vw;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--size-larger);
+  /* padding: var(--size-larger); */
   background: var(--background-color) url(../images/pattern-background-mobile.svg)
   center top no-repeat;
   background-size: contain;
@@ -86,7 +95,7 @@ text-align: center;
 .plan__change:hover{
   cursor: pointer;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s ease-in;
   color: var(--opacity-blue);
 }
 
@@ -109,22 +118,27 @@ flex-direction: column;
   margin: var(--size-smaller) var(--size-largest) var(--size-largest);
   font-weight: var(--fw-bold);
   border-radius: var(--size-normal);
-  box-shadow: 0  var(--size-smaller) var(--size-smaller) var(--opacity-pale-blue);
+  box-shadow: 0  var(--size-small) var(--size-small) var(--opacity-pale-blue);
   
 }
 
 .btn__payment:hover{
   background: var(--opacity-blue);
+  transition: .3s ease-in-out;
+  cursor: pointer;
 }
 
 .btn__cancel{
   background: none;
   color: var(--change-color) ;
   font-weight: var(--fw-semi);
+  font-size: .9rem;
 }
 
 .btn__cancel:hover{
  color: var(--title-color);
+ transition: .3s ease-in;
+  cursor: pointer;
 }
 .attribution{
 position:absolute;
@@ -194,7 +208,7 @@ font-weight: var(--fw-semi);
 
     }
     .attribution{
-      bottom: 0;
+      bottom: 5%;
     }
    }
 
