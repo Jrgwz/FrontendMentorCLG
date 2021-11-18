@@ -11,7 +11,7 @@
   background: var(--background-color) url(../images/pattern-background-mobile.svg)
   center top no-repeat;
   background-size: contain;
-  
+  position: relative;
 }
 
 
@@ -51,16 +51,11 @@ text-align: center;
   align-items: center;
   margin-bottom: var(--size-largest);
   justify-content: center;
-  gap: var(--size-largest);
+  /* gap: var(--size-largest); */
   margin: 0 var(--size-largest) var(--size-normal);
   padding: var(--size-large) 0 var(--size-large) 0;
   background: var(--plan-bg-color);
   border-radius: var(--size-normal);
-}
-
-.plan__main{
- /* padding: 0; */
-
 }
 
 .plan__title,
@@ -95,16 +90,116 @@ text-align: center;
   color: var(--opacity-blue);
 }
 
-.card_btn{
-   
+.card__btn{
+display: flex;
+flex-direction: column;
+
+}
+
+.btn__payment,
+.btn__cancel{
+  text-decoration: none;
+  border: none;
+}
+
+.btn__payment{
+  padding: 1.2rem;
+  color: #fff;
+  background: var(--bright-blue);
+  margin: var(--size-smaller) var(--size-largest) var(--size-largest);
+  font-weight: var(--fw-bold);
+  border-radius: var(--size-normal);
+  box-shadow: 0  var(--size-smaller) var(--size-smaller) var(--opacity-pale-blue);
+  
+}
+
+.btn__payment:hover{
+  background: var(--opacity-blue);
+}
+
+.btn__cancel{
+  background: none;
+  color: var(--change-color) ;
+  font-weight: var(--fw-semi);
+}
+
+.btn__cancel:hover{
+ color: var(--title-color);
+}
+.attribution{
+position:absolute;
+bottom: 10%;
+color: var(--title-color);
+font-weight: var(--fw-semi);
+}
+
+.attribution a{
+  text-decoration: none;
+  color: var(--bright-blue);
 }
 
 
 
 
+@media  screen and (min-width: 767px) {
+  
+  .container{
+    background: var(--background-color) url(../images/pattern-background-desktop.svg)
+    center top no-repeat;
+    background-size: contain;
+    
+  }
+  
+ .card{
+    max-width: 450px;
+    height: 700px;
+    }
+  
+    .card__illustration{
+      height: 13.75rem;
+    }
+    
+    .data__description{
+      text-align: center;
+      padding: 0 var(--size-large);
+    }
+  
+    .card__plan{
+      margin: 0 3rem var(--size-normal) ;
+      padding: var(--size-largest) 0;
+      position: relative;
+    }
+     
+    
+    .plan__main{
+      padding-left: var(--size-normal);
+      margin-right: calc(var(--size-xl) + 2rem);
+    }
+     
+    .plan__title{
+      font-size: var(--fs-description);
+    }
+
+    .plan__price{
+      font-size: 0.95rem;
+    }
+     
+   .btn__payment{
+     padding: calc(var(--size-small) + 0.15rem);
+     margin: var(--size-smaller) calc(var(--size-xl) + 1rem )var(--size-largest);
+     border-radius: var(--size-small);
+   }
 
 
 
 
 
+
+
+
+
+
+
+
+}
 
