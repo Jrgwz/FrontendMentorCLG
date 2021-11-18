@@ -3,7 +3,7 @@
 
 .container{
   width: 100vw;
-  height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
 .card{
 max-width: 375px;
 height: 650px;
-background: var(--card-color);
+background: #fff;
 border-radius: var(--size-normal);
 box-shadow: 0  var(--size-largest) var(--size-largest) var(--desaturated-shadow);
 }
@@ -158,10 +158,13 @@ font-weight: var(--fw-semi);
     .card__illustration{
       height: 13.75rem;
     }
-    
+     .data__title{
+       font-size: var(--size-largest);
+     }
     .data__description{
       text-align: center;
-      padding: 0 var(--size-large);
+      padding: 0 var(--size-larger);
+      line-height: var(--size-larger);
     }
   
     .card__plan{
@@ -188,6 +191,11 @@ font-weight: var(--fw-semi);
      padding: calc(var(--size-small) + 0.15rem);
      margin: var(--size-smaller) calc(var(--size-xl) + 1rem )var(--size-largest);
      border-radius: var(--size-small);
+
+    }
+    .attribution{
+      bottom: 0;
+    }
    }
 
 
@@ -201,5 +209,6 @@ font-weight: var(--fw-semi);
 
 
 
-}
+
+
 
