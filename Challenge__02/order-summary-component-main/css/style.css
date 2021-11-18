@@ -38,7 +38,7 @@ box-shadow: 0  var(--size-largest) var(--size-largest) var(--desaturated-shadow)
 }
 
 .card__data{
-padding: var(--size-normal) var(--size-largest) 0;
+padding: calc(var(--size-largest) + 1rem) var(--size-largest) 0;
 margin: 0;
 text-align: center;
 
@@ -47,7 +47,7 @@ text-align: center;
   font-size: var(--fs-title);
   font-weight: var(--fw-bold);
   color: var(--title-color);
-  margin-bottom: var(--size-largest);
+  margin-bottom: var(--size-large);
 }
 
 .data__description{
@@ -142,7 +142,7 @@ flex-direction: column;
 }
 .attribution{
 position:absolute;
-bottom: 10%;
+bottom: 5%;
 color: var(--title-color);
 font-weight: var(--fw-semi);
 }
@@ -166,7 +166,7 @@ font-weight: var(--fw-semi);
   
  .card{
     max-width: 450px;
-    height: 700px;
+    height: 676px;
     }
   
     .card__illustration{
@@ -207,7 +207,9 @@ font-weight: var(--fw-semi);
      border-radius: var(--size-small);
 
     }
-    .attribution{
+
+    
+      .attribution{
       bottom: 5%;
     }
    }
