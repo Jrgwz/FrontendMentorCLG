@@ -1,0 +1,126 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import 'root-style.css';
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* img{
+  max-width: 100%;
+  height: auto;
+} */
+
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  
+  position: relative;
+  background: var(--background-color);
+}
+
+.card{
+ max-width: 300px;
+ /* height: 727px; */
+ background: var(--card-color);
+ box-shadow: 0  var(--size-normal) var(--size-normal) var(--dark-op-blue);
+ border-radius: .5rem;
+
+
+}
+.card__data{
+  text-align: center;
+}
+
+
+ .card__illustration{
+  height: 14rem;
+  background: url(../images/image-header-mobile.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: .5rem .5rem 0 0;
+  
+ }
+
+ .card__illustration::after{
+  background-color: #550081;
+  border-radius: .5rem .5rem 0 0;
+  content: '';
+  height: 14rem;
+  width:300px;
+  opacity: .5;
+  position: absolute;
+
+  
+ }
+
+ .illustration__overlay{
+   height: 14rem;
+   background-color: var(--accent-color);
+   position: absolute;
+   mix-blend-mode: difference;
+   width: 300px;
+   opacity: .1;
+   border-radius: .5rem .5rem 0 0;
+ }
+
+.card__title{
+  padding: 1.5rem 1.5rem 0rem;
+  font-size: var(--size-largest);
+  color: #fff;
+}
+
+.card__stat{
+  font-family: var(--base-font-family);
+}
+.title__marker{
+color: var(--accent-color);
+}
+
+.card__description{
+  font-size: 0.9rem;
+  font-family: var(--secondary-font-family);
+  padding: 0 2rem 0;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -.01rem;
+  line-height: 1.6rem;
+  opacity: 0.7;
+  margin-bottom: 2rem;
+}
+ 
+.card__item{
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.stat__description{
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+.stat__descriptionq{
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  margin-bottom: 2rem;
+  }
+@media screen and (min-width: 768px) {
+  
+}

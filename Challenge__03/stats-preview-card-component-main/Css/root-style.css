@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root{
+  /* Color */
+
+
+ /* Primary */
+
+ --very-dark-blue: hsl(233, 47%, 7%);
+ --dark-desatured-blue: hsl(244, 38%, 16%);
+ --soft-violet: hsl(277, 64%, 61%);
+ /* Neutral */
+ --dark-op-blue: hsla(243, 52%, 14%, 0.13);
+ --white-main-text:  hsl(0, 0%, 100%); 
+ --trans-white-main: hsla(0, 0%, 100%, 0.75);
+ --trans-white-stat: hsla(0, 0%, 100%, 0.6);
+
+
+
+ /* Color Scheme */
+
+ --background-color: var(--very-dark-blue);
+ --card-color: var(--dark-desatured-blue);
+ --accent-color: var(--soft-violet);
+ --title-stats-color: var(--white-main-text);
+ --description-color: var(--trans-white-main);
+ --stats-color: var(--trans-white-stat);
+ --card-shadow-color: var(--dark-op-blue);
+
+ /* Typography */
+
+ --base-font-family: 'Inter', sans-serif;
+ --secondary-font-family: 'Lexend Deca', sans-serif;
+ --fw-normal: 400;
+ --fw-bold: 700;
+ --fs-title: 2rem;
+ --fs-description: 1rem;
+ --fs-sub: 0.5rem;
+
+ /* Sizes */
+
+
+--size-smallest: 0.25rem;
+--size-smaller: 0.5rem;
+--size-small: 0.75rem;
+--size-normal: 1rem;
+--size-large: 1.25rem;
+--size-larger: 1.5rem;
+--size-largest: 1.75rem;
+--size-xl: 2rem;
+--size-xxl: 2.5rem;
+--size-xxxl: 3rem;
+
+
+font-size: 15px;
+font-family: var(--secondary-font-family);
+font-weight: var(--fw-normal);
+}
+
+.stat__description{
+  font-family: var(--base-font-family);
+}
