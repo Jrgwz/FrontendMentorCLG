@@ -1,22 +1,17 @@
 @import '../node_modules/normalize.css/normalize.css';
 @import 'root-style.css';
 
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
+
 
 *,
 *::before,
-*::after{
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* img{
-  max-width: 100%;
-  height: auto;
-} */
 
-.container{
+.container {
   width: 100vw;
   min-height: 100vh;
   /* display: flex;
@@ -26,81 +21,75 @@
   display: grid;
   align-items: center;
   justify-items: center;
-  
+
   position: relative;
   background: var(--background-color);
 }
 
-.card{
- max-width: 300px;
- /* height: 727px; */
- background: var(--card-color);
- box-shadow: 0  var(--size-normal) var(--size-normal) var(--dark-op-blue);
- border-radius: .5rem;
-
-
+.card {
+  max-width: 300px;
+  /* height: 727px; */
+  background: var(--card-color);
+  box-shadow: 0 var(--size-normal) var(--size-normal) var(--dark-op-blue);
+  border-radius: 0.5rem;
 }
-.card__data{
+.card__data {
   text-align: center;
 }
 
-
- .card__illustration{
+.card__illustration {
   height: 14rem;
   background: url(../images/image-header-mobile.jpg) center no-repeat;
   background-size: cover;
-  border-radius: .5rem .5rem 0 0;
-  
- }
+  border-radius: 0.5rem 0.5rem 0 0;
+}
 
- .card__illustration::after{
+.card__illustration::after {
   background-color: #550081;
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
   content: '';
   height: 14rem;
-  width:300px;
-  opacity: .5;
+  width: 300px;
+  opacity: 0.5;
   position: absolute;
+}
 
-  
- }
+.illustration__overlay {
+  height: 14rem;
+  background-color: var(--accent-color);
+  position: absolute;
+  mix-blend-mode: difference;
+  width: 300px;
+  opacity: 0.1;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
 
- .illustration__overlay{
-   height: 14rem;
-   background-color: var(--accent-color);
-   position: absolute;
-   mix-blend-mode: difference;
-   width: 300px;
-   opacity: .1;
-   border-radius: .5rem .5rem 0 0;
- }
-
-.card__title{
+.card__title {
   padding: 1.5rem 1.5rem 0rem;
   font-size: var(--size-largest);
   color: #fff;
 }
 
-.card__stat{
+.card__stat {
   font-family: var(--base-font-family);
 }
-.title__marker{
-color: var(--accent-color);
+.title__marker {
+  color: var(--accent-color);
 }
 
-.card__description{
+.card__description {
   font-size: 0.9rem;
   font-family: var(--secondary-font-family);
   padding: 0 2rem 0;
   color: #fff;
   text-decoration: none;
-  letter-spacing: -.01rem;
+  letter-spacing: -0.01rem;
   line-height: 1.6rem;
   opacity: 0.7;
   margin-bottom: 2rem;
 }
- 
-.card__item{
+
+.card__item {
   margin-bottom: 1rem;
   color: #fff;
   line-height: 2rem;
@@ -108,19 +97,117 @@ color: var(--accent-color);
   list-style: none;
 }
 
-.stat__description{
+.stat__description {
   font-size: 0.7rem;
   opacity: 0.6;
   text-transform: uppercase;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
 }
-.stat__descriptionq{
+.stat__descriptionq {
   font-size: 0.7rem;
   opacity: 0.6;
   text-transform: uppercase;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   margin-bottom: 2rem;
+}
+.attribution { font-size: 11px; text-align: center; 
+color: #fff;
+font-family: var(--base-font-family);}
+.attribution a { 
+  color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 1440px) {
+  .card__illustration {
+    height: 100%;
+    background: url(../images/image-header-desktop.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 0 0.5rem 0.5rem 0;
   }
-@media screen and (min-width: 768px) {
+
+  .card__illustration::after {
+    background-color: #550081;
+    border-radius: 0 0.5rem 0.5rem 0;
+    content: '';
+    height: 30.8rem;
+    width: 38.4rem;
+    opacity: 0.5;
+    position: absolute;
+  }
+
+  .illustration__overlay {
+    background-color: var(--accent-color);
+    position: absolute;
+    mix-blend-mode: difference;
+    opacity: 0.1;
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 30.8rem;
+    width: 38.4rem;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+  }
+
+  .card .card__illustration {
+    grid-column: 2;
+    grid-row: 1;
+  }
+ .card__data{
+   margin: 2rem 3rem 1rem;
+   
+ }
+ .card__title{
+   font-size: 2.5rem;
+   text-align: left;
+   margin-bottom: 2rem;
+ }
+
+ .card__description{
+   font-size: 1.1rem;
+   text-align: left;
+   padding-left: 1.5rem;
+   margin-bottom: 5rem;
+   }
+
+   .card__stat{
+     display: flex;
+     padding-left: 1.5rem;
+     text-align: left;
+     
+   }
+
+
+   .card__item{
+     margin-left: 4.5rem;
+   }
+
+
+   .card__item:first-child{
+     margin-left: 0;
+   }
+ 
+   .attribution{
+     display: inline-block;
+     bottom: 10%;
+     position:absolute;
+     font-size: 1rem;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 }
