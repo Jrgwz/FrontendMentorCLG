@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+/* Color */
+
+
+/* Primary */
+--soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+
+/* Neutral */
+
+--dark-blue : hsl(216, 54%, 11%);
+--darker-blue : hsl(215, 51%, 16%);
+--dk-blue: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+--card-bg: hsl(216, 54%, 11%);
+
+/* Shadow */
+
+
+
+/* General color's */
+
+--background-color: var(--dark-blue);
+--card-color: var(--darker-blue);
+--line-color: var(--dk-blue);
+
+/* Typography */
+--base-font-family: 'Outfit', sans-serif;
+--fw-light: 300;
+--fw-regular: 400;
+--fw-semi: 600;
+--fs-title: 1.5rem;
+--fs-description: 1rem;
+--fs-sub: 0.9rem;
+
+/* Sizes */
+
+
+--size-smallest: 0.25rem;
+--size-smaller: 0.5rem;
+--size-small: 0.75rem;
+--size-normal: 1rem;
+--size-large: 1.25rem;
+--size-larger: 1.5rem;
+--size-largest: 1.75rem;
+--size-xl: 2rem;
+
+/* Root Styles. */
+font-size: 18px;
+font-family: var(--base-font-family);
+font-weight: var(--fw-regular);
+
+}
