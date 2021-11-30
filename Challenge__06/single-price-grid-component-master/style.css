@@ -197,9 +197,7 @@ a{
 margin-top: var(--mb-2-5);
 }
 
-.monthly__description{
 
-}
 
 .btn__sign{
   background-color: var(--clr-seconday-400);
@@ -260,9 +258,7 @@ margin-top: var(--mb-2-5);
     ;
   }
   
-  .card{
-    /* padding: 3rem 3.5rem 3rem 2.5rem; */
-  }
+  
 
 
 
